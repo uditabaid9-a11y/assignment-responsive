@@ -6,9 +6,7 @@
 html, body {
     height: 100%;
     width: 100%;
-}/* =========================================
-   RESET & BASE
-========================================= */
+}
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -36,9 +34,6 @@ img {
   max-width: 100%;
 }
 
-/* =========================================
-   ANNOUNCEMENT BAR
-========================================= */
 .announcement-bar {
   background-color: #2a2857;
   color: #fff;
@@ -48,9 +43,6 @@ img {
   letter-spacing: 0.5px;
 }
 
-/* =========================================
-   NAVIGATION
-========================================= */
 nav {
   display: flex;
   align-items: center;
@@ -103,7 +95,6 @@ nav {
   opacity: 0.6;
 }
 
-/* Hamburger (mobile only) */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -122,7 +113,6 @@ nav {
   transition: all 0.3s;
 }
 
-/* Mobile nav drawer */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -150,9 +140,6 @@ nav {
   opacity: 0.6;
 }
 
-/* =========================================
-   BUTTONS
-========================================= */
 .btn {
   display: inline-block;
   background-color: #2a2857;
@@ -213,9 +200,6 @@ nav {
   margin-top: 44px;
 }
 
-/* =========================================
-   SECTION LABELS & TITLES
-========================================= */
 .section-label {
   text-align: center;
   font-size: 11px;
@@ -246,9 +230,6 @@ nav {
   line-height: 1.6;
 }
 
-/* =========================================
-   HERO SECTION
-========================================= */
 .hero {
   position: relative;
   min-height: 92vh;
@@ -317,9 +298,6 @@ nav {
   50%       { transform: translateY(8px); }
 }
 
-/* =========================================
-   BEST SELLERS
-========================================= */
 .best-sellers {
   padding: 80px 40px;
 }
@@ -389,9 +367,6 @@ nav {
   margin-bottom: 14px;
 }
 
-/* =========================================
-   ORIGIN / ABOUT
-========================================= */
 .origin {
   background-color: #2a2857;
   color: #fff;
@@ -462,9 +437,6 @@ nav {
   border-radius: 4px;
 }
 
-/* =========================================
-   REVIEWS
-========================================= */
 .reviews {
   padding: 80px 40px;
   background-color: #faf8f5;
@@ -533,9 +505,6 @@ nav {
   margin-top: 2px;
 }
 
-/* =========================================
-   LATTES SECTION
-========================================= */
 .lattes {
   padding: 80px 40px;
 }
@@ -548,7 +517,6 @@ nav {
   margin: 0 auto;
 }
 
-/* Last row: 2 items centred */
 .lattes-grid .latte-card:nth-child(4),
 .lattes-grid .latte-card:nth-child(5) {
   grid-column: span 1;
@@ -604,9 +572,6 @@ nav {
   margin-bottom: 18px;
 }
 
-/* =========================================
-   JOURNAL
-========================================= */
 .journal {
   padding: 80px 40px;
   background-color: #faf8f5;
@@ -660,9 +625,6 @@ nav {
   color: #5a5a8a;
 }
 
-/* =========================================
-   NEWSLETTER
-========================================= */
 .newsletter {
   background-color: #2a2857;
   color: #fff;
@@ -740,9 +702,6 @@ nav {
   color: #fff;
 }
 
-/* =========================================
-   FOOTER
-========================================= */
 footer {
   background-color: #1a1840;
   color: #ccc;
@@ -807,9 +766,6 @@ footer {
   color: #888;
 }
 
-/* =========================================
-   RESPONSIVE — TABLET (max 900px)
-========================================= */
 @media (max-width: 900px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -844,11 +800,8 @@ footer {
   }
 }
 
-/* =========================================
-   RESPONSIVE — MOBILE (max 600px)
-========================================= */
 @media (max-width: 600px) {
-  /* Nav */
+  
   nav {
     padding: 14px 20px;
   }
@@ -862,7 +815,6 @@ footer {
     display: flex;
   }
 
-  /* Hero */
   .hero-content h1 {
     font-size: 32px;
   }
@@ -871,7 +823,6 @@ footer {
     font-size: 15px;
   }
 
-  /* Sections */
   .best-sellers,
   .reviews,
   .lattes,
@@ -885,7 +836,6 @@ footer {
     font-size: 24px;
   }
 
-  /* Grids → single column */
   .products-grid,
   .reviews-grid,
   .lattes-grid,
@@ -893,14 +843,12 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  /* Values stacked */
   .values-row {
     flex-direction: column;
     gap: 28px;
     align-items: center;
   }
 
-  /* Footer */
   .footer-top {
     grid-template-columns: 1fr;
   }
@@ -910,7 +858,6 @@ footer {
     text-align: center;
   }
 
-  /* Newsletter form */
   .newsletter-form {
     flex-direction: column;
   }
